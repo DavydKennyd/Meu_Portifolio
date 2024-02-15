@@ -26,7 +26,9 @@ body{
 
 h1{
     text-transform: uppercase;
-    letter-spacing: 4px;  
+    letter-spacing: 4px; 
+    font-family:'Honk', 'Protest Guerrilla', sans-serif;
+    font-size: 70px;
 }
 
 .social-midia{
@@ -260,4 +262,10 @@ a:hover{
     align-items: center;
     justify-content: center;
     color: #e8e8f3;
+}
+p{
+    color: #030107;
+    height: 300px;
+    width: 530px;
+    font-size: 25px;
 }
