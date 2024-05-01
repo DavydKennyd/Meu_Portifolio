@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -12,7 +12,7 @@ body {
 .header-conteiner {
     height: 100vh;
     width: 100vw;
-    background-color: #512250;
+    background-color: #1e1e1e;
     background-image: url(img/ultima4.0.png);
     background-repeat: no-repeat;
     background-position: center right;
@@ -25,13 +25,13 @@ body {
     padding: 0 112px;
     position: relative;
     font-size: 24px; 
-    box-shadow: 0 0 20px 5px rgb(106, 4, 231);
+    box-shadow: 0 0 20px 15px rgb(30, 32, 35);
 }
 
 .header-proj{
     height: 25vh;
     width: 100vw;
-    background-color: #512250;
+    background-color: #1e1e1e;
     background-image: url();
     background-repeat: no-repeat;
     background-position: center right;
@@ -44,7 +44,7 @@ body {
     padding: 0 112px;
     position: relative;
     font-size: 24px; 
-    box-shadow: 0 0 20px 5px rgb(106, 4, 231);
+    box-shadow: 0 0 20px 5px rgb(30, 32, 35);
 
 }
 /* titulo da pagina de projeto */
@@ -63,13 +63,14 @@ h1 {
 .social-midia {
     margin-top: 1rem;
     display: flex;
+    color:#fff
 }
 
 .social-midia a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     padding: 1rem 4rem;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 253, 253);
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -79,6 +80,7 @@ h1 {
 
 a:hover {
     background-color: white;
+    color:#000000
 }
 
 /* Estilo para o menu */
@@ -104,7 +106,7 @@ a:hover {
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: #1e1e2a;
+    background-color: #ffffff;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -137,7 +139,7 @@ a:hover {
     height: 4px;
     width: 10px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px rgb(27, 23, 23);
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -161,15 +163,19 @@ a:hover {
     list-style-type: none;
 }
 
+
+
 .menu-items ul li a {
     margin: 10px 0;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
 }
-
+.menu-items ul li a:hover{
+    color: #1e1e1e;
+}
 /* Animação do menu */
 #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
@@ -189,11 +195,11 @@ a:hover {
 }
 
 #toggle:checked + .checkbox {
-    background-color: white;
+    background-color: rgb(31, 30, 31);
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax white;
+    box-shadow: 0px 0px 0px 100vmax rgb(31, 30, 31);
     z-index: 1; 
 }
 
@@ -302,11 +308,12 @@ a:hover {
 .footer {
     width: 100%;
     height: 100px;
-    background-color: #512250;
+    background-color: #282828;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #e8e8f3;
+    box-shadow: 0 0 20px 5px rgb(30, 32, 35);
 }
 
 p {
@@ -333,6 +340,7 @@ a {
     font-size: 60px;
     display: flex;
     justify-content: center;
+    color:#030107;
 
 }
 
@@ -350,7 +358,7 @@ button[type="submit"]{
     padding: 20px 40px;
     border: none;
     border-radius: 5px;
-    background-color: #512250;
+    background-color: #282828;
     color: #fff;
     font-size: 16px;
     cursor:pointer;
@@ -358,13 +366,13 @@ button[type="submit"]{
 
 }
 button[type="submit"]:hover{
-    background-color: #1e1e2a;
+    background-color: rgb(23, 20, 20);
 }
 
 input[type="search"]{
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #302e2e;
     font-size: 16px;
     margin-right: 10px;
 }
@@ -374,18 +382,18 @@ input[type="search"]{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    border: 3px solid #ffffff;
+    border: 3px solid #1e1e1e;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
     width: 250px;
     height: 250px;
-    background-color: #512250;
+    background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
     border-radius: 7px;
     padding: 40px;
-    box-shadow: 10px 10px 40px rgb(60, 7, 124);
+    box-shadow: 10px 10px 40px rgb(30, 32, 35);
 
 }
 
@@ -398,7 +406,8 @@ input[type="search"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #403d3d;
+    color: white;
 }
 
 .temp {
@@ -410,7 +419,7 @@ input[type="search"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #403d3d;
 }
 
 .spacer {
@@ -422,7 +431,7 @@ input[type="search"]{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #000000;
+    color: #ffffff;
 }
 
 /*PARA DISPOSITIVOS MOVEIS */
