@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Protest+Guerrilla&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* Definindo o estilo base */
 body {
     margin: 0;
@@ -56,8 +55,8 @@ body {
 h1 {
     text-transform: uppercase;
     letter-spacing: 4px; 
-    font-family: 'Honk', 'Protest Guerrilla', sans-serif;
-    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
 }
 
 /* Estilo para links nas redes sociais */
@@ -303,7 +302,7 @@ a:hover {
 .footer {
     width: 100%;
     height: 100px;
-    background-color: #000000;
+    background-color: #512250;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,151 +326,187 @@ a {
     text-decoration: none;
 }
 
-.news{
-    text-align: center;
-    margin-top:150px;
-}
+/* PREVISÃO DO TEMPO/*/
 
-#news-conteiner {
-    margin-top: 20px;
+.tempo{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  /* Estilo para cada notícia */
-  .news-item {
-    width: calc(33.33% - 20px); /* Ajuste a largura conforme necessário */
-    margin-bottom: 20px;
-    margin-right: 20px; /* Adiciona um espaçamento entre as notícias */
-    padding: 10px;
-    background-color: #512250;
-    border: 5px solid #000; /* Adiciona uma borda preta de 1px */
+
+}
+
+#pesquisa {
+    margin-bottom: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    height: auto;
+}
+
+button[type="submit"]{
+    padding: 20px 40px;
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 0 14px 1px rgb(144, 4, 231);
-  }
-  
-  .news-item:hover {
-    background-color: #270950;
-  }
-  
-  /* Estilo para o título da notícia */
-  .news-item h3 {
-    margin: 0;
+    background-color: #512250;
+    color: #fff;
     font-size: 16px;
-  }
-  
-  /* Estilo para a descrição da notícia */
-  .news-item p {
-    margin: 5px 0 0;
-    font-size: 14px;
-  }
-  
-  /* Estilo para o link da notícia */
-  .news-item a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
+    cursor:pointer;
+    display: block;
 
+}
+button[type="submit"]:hover{
+    background-color: #1e1e2a;
+}
 
-/* Media Queries para tornar o layout responsivo */
-@media screen and (max-width: 858px) {
+input[type="search"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+/* Estilos para a caixa de previsão do tempo */
+.box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+    background-color: #512250;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgb(60, 7, 124);
+
+}
+
+.city {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.temp {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.spacer {
+    margin-bottom: 30px;
+}
+
+/* Estilo para o título da cidade */
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/*PARA DISPOSITIVOS MOVEIS */
+@media (max-width: 767px) {
     .header-conteiner {
-        padding: 0 20px; /* Reduzindo o padding para telas menores */
+        padding: 0 20px; /* Reduzindo o padding */
+        background-image: none;
     }
 
-    .header-conteiner {
-        background-image: none; /* Oculta a imagem de fundo */
+    .header-proj {
+        padding: 0 20px; /* Reduzindo o padding */
+    }
+
+    h1 {
+        font-size: 48px; /* Reduzindo o tamanho do título */
+    }
+
+    .social-midia a {
+        padding: 1rem 2rem; /* Reduzindo o padding dos links sociais */
+    }
+
+    .checkbox {
+        top: 15px; /* Movendo o menu hamburguer para cima */
+        right: 15px; /* Movendo o menu hamburguer para a direita */
+    }
+
+    .checkbox-conteiner{
+        padding-right: 50%px;
+    }
+
+    .menu {
+        top: 18px; /* Ajustando a posição do menu */
+        right: 15px; /* Ajustando a posição do menu */
+    }
+
+    .menu-items ul li a {
+        font-size: 24px; /* Reduzindo o tamanho do texto do menu */
     }
 
     .card {
-        width: 90%; /* Redimensionando os cartões para ocupar 90% da largura */
-        max-width: 300px; /* Limitando o tamanho máximo dos cartões */
-        margin: 2rem auto; /* Centralizando os cartões */
+        width: 200px; /* Reduzindo o tamanho dos cards */
+        height: 200px; /* Reduzindo o tamanho dos cards */
+        font-size: 14px; /* Reduzindo o tamanho do texto dos cards */
     }
 
-    .card-text {
-        padding: 0; /* Removendo o padding */
-        width: 60%;
+    p {
+        width: auto; /* Ajustando a largura do parágrafo */
+        font-size: 18px; /* Reduzindo o tamanho do texto */
     }
-    .card-conteiner{
-        flex-direction: column;
+
+    .sobre_mim {
+        width: auto; /* Ajustando a largura do parágrafo */
+        font-size: 16px; /* Reduzindo o tamanho do texto */
     }
-    .tit_proj{
-        text-align: center;
-        font-size: 2.00em;
+
+    .tempo {
+        font-size: 36px; /* Reduzindo o tamanho do texto */
     }
-    .card-wrapper h2 {
-        font-size: 30px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin: 15;
-        transition: 0.5s ease-in-out;
+
+    .box {
+        width: 200px; /* Reduzindo o tamanho da caixa de previsão do tempo */
+        height: 200px; /* Reduzindo o tamanho da caixa de previsão do tempo */
+        font-size: 14px; /* Reduzindo o tamanho do texto dentro da caixa */
     }
-    .card{
-        width: 300px;
-        height: 300px;
-        border-radius: 100%;
-        margin: 3rem 0 0 0;
-        display: flex;
-        align-items: center;
+    .card-conteiner {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens na horizontal */
+        text-align: center; /* Centraliza o texto */
         justify-content: center;
-        background-color: #6f657c;
-        background-image: url(img/comp_ultimo.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        filter: grayscale(0.5s);
-        color: black;
-        cursor: pointer;
-        transition: 0.5s ease-in-out;
-    }
-    .sobre_mim{
-        font-size: 14px;
-        color: black;
-        padding: 20px;
-        text-align: justify;
-        white-space: pre-line;
-    }
-
-}
-
-
-@media screen and (max-width: 468px){
-    .header-conteiner {
-        padding: 0 20px; /* Reduzindo o padding para telas menores */
-    }
-
-    .header-conteiner {
-        background-image: none; /* Oculta a imagem de fundo */
     }
 
     .card {
-        width: 90%; /* Redimensionando os cartões para ocupar 90% da largura */
-        max-width: 300px; /* Limitando o tamanho máximo dos cartões */
-        margin: 2rem auto; /* Centralizando os cartões */
+        margin-bottom: 20px; /* Adiciona margem inferior entre os cards */
     }
 
     .card-text {
-        padding: 0; /* Removendo o padding */
+        width: 250px; /* Define a largura do texto */
     }
-    .card-conteiner{
-        flex-direction: column;
-    }
-    .tit_proj{
-        text-align: center;
-        font-size: 1.70em;
-    }
-    .sobre_mim{
-        font-size: 14px;
-        color: black;
-        padding: 20px;
-        text-align: justify;
-        white-space: pre-line;
+    .card:first-child{
+        margin-top: 110px;
     }
 
+    .tit_proj{
+        margin-right: 50px;
+    }
 }
+

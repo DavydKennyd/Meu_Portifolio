@@ -86,8 +86,17 @@
             </div>
         </div>
     </main>  
-    <h1 class="news">últimas notícias</h1>
-    <div id="news-conteiner"></div>
+    <h2 class="tempo">Previsão Meteorológica</h2>
+     <form id="pesquisa"> 
+        <input type="search" placeholder="Buscar cidade" name="city_name" id="city_name"> <br>
+        <button type="submit">Pesquisar</button>
+    </form>
+    <div class="box" id="weather">
+        <div id="title" class="city"></div>
+        <div class="spacer"></div>
+        <div id="temp_value" class="temp"></div>
+    </div>
+    <div class="alert"></div>
     <footer class="footer">
         Feito por Davyd Kennyd 
     </footer>  
