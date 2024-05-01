@@ -428,25 +428,25 @@ input[type="search"]{
 /*PARA DISPOSITIVOS MOVEIS */
 @media (max-width: 767px) {
     .header-conteiner {
-        padding: 0 20px; /* Reduzindo o padding */
+        padding: 0 20px; 
         background-image: none;
     }
 
     .header-proj {
-        padding: 0 20px; /* Reduzindo o padding */
+        padding: 0 20px; 
     }
 
     h1 {
-        font-size: 48px; /* Reduzindo o tamanho do título */
+        font-size: 48px; 
     }
 
     .social-midia a {
-        padding: 1rem 2rem; /* Reduzindo o padding dos links sociais */
+        padding: 1rem 2rem; 
     }
 
     .checkbox {
-        top: 15px; /* Movendo o menu hamburguer para cima */
-        right: 15px; /* Movendo o menu hamburguer para a direita */
+        top: 15px; 
+        right: 15px; 
     }
 
     .checkbox-conteiner{
@@ -454,52 +454,52 @@ input[type="search"]{
     }
 
     .menu {
-        top: 18px; /* Ajustando a posição do menu */
-        right: 15px; /* Ajustando a posição do menu */
+        top: 18px; 
+        right: 15px;
     }
 
     .menu-items ul li a {
-        font-size: 24px; /* Reduzindo o tamanho do texto do menu */
+        font-size: 24px; 
     }
 
     .card {
-        width: 200px; /* Reduzindo o tamanho dos cards */
-        height: 200px; /* Reduzindo o tamanho dos cards */
-        font-size: 14px; /* Reduzindo o tamanho do texto dos cards */
+        width: 200px; 
+        height: 200px; 
+        font-size: 14px; 
     }
 
     p {
-        width: auto; /* Ajustando a largura do parágrafo */
-        font-size: 18px; /* Reduzindo o tamanho do texto */
+        width: auto; 
+        font-size: 18px; 
     }
 
     .sobre_mim {
-        width: auto; /* Ajustando a largura do parágrafo */
-        font-size: 16px; /* Reduzindo o tamanho do texto */
+        width: auto; 
+        font-size: 16px; 
     }
 
     .tempo {
-        font-size: 36px; /* Reduzindo o tamanho do texto */
+        font-size: 36px; 
     }
 
     .box {
-        width: 200px; /* Reduzindo o tamanho da caixa de previsão do tempo */
-        height: 200px; /* Reduzindo o tamanho da caixa de previsão do tempo */
-        font-size: 14px; /* Reduzindo o tamanho do texto dentro da caixa */
+        width: 200px; 
+        height: 200px; 
+        font-size: 14px; 
     }
     .card-conteiner {
-        flex-direction: column; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens na horizontal */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
         justify-content: center;
     }
 
     .card {
-        margin-bottom: 20px; /* Adiciona margem inferior entre os cards */
+        margin-bottom: 20px;
     }
 
     .card-text {
-        width: 250px; /* Define a largura do texto */
+        width: 250px; 
     }
     .card:first-child{
         margin-top: 110px;
