@@ -1,6 +1,7 @@
 # Título do Seu Projeto
 - O projeto é um website dinâmico e responsivo que utiliza tecnologias web modernas, incluindo HTML, CSS e JavaScript. Ele apresenta uma interface interativa e visualmente atraente, incorporando animações CSS para proporcionar uma experiência de usuário envolvente. Além disso, o projeto integra-se a uma API específica (inserir nome ou descrição da API) para fornecer funcionalidades adicionais.
 - Destacando-se pela sua flexibilidade, o site é adaptável a uma variedade de dispositivos, garantindo uma experiência consistente tanto em dispositivos móveis quanto em desktops. A organização do código HTML utiliza funções com div para uma estrutura clara e escalável.
+- ACESSE O PORTIFÓLIO AQUI: https://meu-portifolio-ashy.vercel.app/
 
 ## Linguagens e Tecnologias Utilizadas
 - HTML
